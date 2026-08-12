@@ -15,7 +15,7 @@ def texto_para_binario(texto):
     return " ".join(resultado_final)
 
 mensagem = input("Informe a frase: ")
-print(f"'{mensagem}' em binário fica:")
+#print(f"'{mensagem}' em binário fica:")
 print(texto_para_binario(mensagem))
 
 #Função trasnformar uma imagem para binário
@@ -39,4 +39,4 @@ try:
     print(f"'Os primeito 20 bytes da imagem em binário são: \n{resultado}")
 except FileNotFoundError:
     print(f"Erro: O arquivo '{caminho}' não foi encontrado. Coloque uma imagem na mesma pasta!")
-    
+   
