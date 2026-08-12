@@ -1,10 +1,8 @@
 import builtins
-
-# 1. Truque para importar o Converter.py sem disparar o prompt de input dele
 input_original = builtins.input
-builtins.input = lambda *args: ""  # Desativa o input temporariamente
+builtins.input = lambda *args: ""
 import Converter
-builtins.input = input_original  # Restaura o input original
+builtins.input = input_original  
 
 
 def ocultar_mensagem(caminho_imagem_original, caminho_imagem_saida, texto_mensagem):
